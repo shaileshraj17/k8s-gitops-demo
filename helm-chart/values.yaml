@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: shailesh1717/k8s-gitops-demo
+  tag: "v1"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+appVersion: "v1"
